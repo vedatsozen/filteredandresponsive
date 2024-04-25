@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight:500;
+    font-style: normal;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  
+
+  h1.titletop {
+    margin: auto;
+    font-size: 50px;
+    color: forestgreen;
+    padding: 5px;
+    width: fit-content;
+  }
+
+  #categorybtns {
+    margin: auto;
+    padding: 5px;
+  
+  }
+
+#container {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.productdiv {
+    margin: auto;
+    margin-top: 10px;
+    height: fit-content;
+    height:fit-content;
+    width:24%;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.productdiv:hover {
+    transition: 500ms ease;
+    box-shadow: 0 0 20px black;
+}
+
+.productdiv > * {
+    margin: auto;
+    padding: 5px;
+   
+}
+
+.title {
+    font-size:35px;
+}
+
+.thumbnail {
+    height: 300px;
+    width: 100%;
+}
+
+.description {
+    font-size: 14px;
+    letter-spacing: 5px;
+    width: 90%;
+}
+
+@media only screen and (max-width:900px) {
+
+    h1.titletop {
+        margin: auto;
+        font-size:10vw;
+        color: forestgreen;
+        padding: 5px;
+        width: fit-content;
+      }
+
+      #categorybtns {
+        margin: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        gap: 5px;
+      }
+
+    #container {
+        height: fit-content;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .productdiv {
+        margin: auto;
+        margin-top: 10px;
+        height: fit-content;
+        height:fit-content;
+        width:48%;
+        cursor: pointer;
+        border-radius: 5px;
+    
+    }
+    
+    .productdiv:hover {
+        transition: 500ms ease;
+        box-shadow: 0 0 20px black;
+    }
+    
+    .productdiv > * {
+        margin: auto;
+        padding: 5px;
+       
+    }
+    
+    .title {
+        font-size:35px;
+    }
+    
+    .thumbnail {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .description {
+        font-size: 14px;
+        letter-spacing: 5px;
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width:480px) {
+
+    h1.titletop {
+        margin: auto;
+        font-size:10vw;
+        color: forestgreen;
+        padding: 5px;
+        width: fit-content;
+      }
+
+    #categorybtns {
+        margin: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        gap: 5px;
+      }
+
+    #container {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+    }
+    
+    .productdiv {
+        margin: auto;
+        margin-top: 10px;
+        height: fit-content;
+        height:fit-content;
+        width:100%;
+        cursor: pointer;
+        border-radius: 5px;
+    
+    }
+    
+    .productdiv:hover {
+        transition: 500ms ease;
+        box-shadow: 0 0 20px black;
+    }
+    
+    .productdiv > * {
+        margin: auto;
+        padding: 5px;
+       
+    }
+    
+    .title {
+        font-size:35px;
+    }
+    
+    .thumbnail {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .description {
+        font-size: 14px;
+        letter-spacing: 5px;
+        width: 90%;
+    }
+
+
+}
