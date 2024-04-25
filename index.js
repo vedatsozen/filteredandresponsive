@@ -1,4 +1,37 @@
 
+
+    fetch('https://dummyjson.com/products/')
+    .then(res => res.json())
+    .then(json => {
+    
+    let data = json.products;
+    
+    let container = document.getElementById("container");
+        
+    container.innerHTML = " "; // Clear previous content
+        
+    
+    data.map(item=> {
+    
+    container.innerHTML += `
+    
+    <div class="productdiv">
+    <img  class="thumbnail" src=${item.thumbnail} />
+    <h1 class="title">${item.title}</h1>
+    <p class="description">${item.description}</p>
+    <h3>${item.price} $</h3>
+    
+    </div>
+    
+    `
+    
+    })
+    
+    })
+    
+
+
+
 function allProducts() {
 
 
@@ -33,7 +66,6 @@ container.innerHTML += `
 
 };
 
-allProducts();
 
 
 function filterSmartphones() {
