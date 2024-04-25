@@ -9,6 +9,9 @@ fetch('https://dummyjson.com/products/')
 let data = json.products;
 
 let container = document.getElementById("container");
+    
+container.innerHTML = " "; // Clear previous content
+    
 
 data.map(item=> {
 
